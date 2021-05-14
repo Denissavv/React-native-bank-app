@@ -47,11 +47,8 @@ export default class App extends React.Component {
               <View style={styles.footer}> 
               <Footer  />
               </View>
-</SafeAreaView>
-              
-    
-  
-    </SafeAreaView>
+</SafeAreaView>           
+   </SafeAreaView>
   );
 }
   }
