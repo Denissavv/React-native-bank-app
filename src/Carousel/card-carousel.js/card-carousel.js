@@ -30,13 +30,7 @@ export default class CarouseCards extends React.Component {
 
   _renderItem({ item, index }) {
     return (
-      <SafeAreaView style ={{
-        justifyContent:"space-around",
-        flexDirection:"row",
-        alignItems:"flex-end",
-        marginLeft:110,
-        marginBottom:20,
-}}>
+      <SafeAreaView style ={styles.mainContainer}>
 
 <View style={styles.leftElemShadow}>
         <LinearGradient
@@ -115,53 +109,62 @@ export default class CarouseCards extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  containerLeft: {
-    flexDirection: 'column',
-    backgroundColor: '#50A2FF',
-    height: 278,
-    width: 195,
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    borderRadius: 10,
-    marginRight:110,
-
- },
- 
- leftElemShadow:{
-shadowColor: "rgba(0, 0, 0, 0.3)",
-shadowOffset: {
-	width: 0,
-	height: 15,
+	
+mainContainer:{
+justifyContent:"space-around",
+flexDirection:"row",
+alignItems:"flex-end",
+marginLeft:110,
+marginBottom:20,
 },
-shadowOpacity: 0.23,
-shadowRadius: 2.62,
+	
+	  containerLeft: {
+	    flexDirection: 'column',
+	    backgroundColor: '#50A2FF',
+	    height: 278,
+	    width: 195,
+	    justifyContent: 'space-around',
+	    alignItems: 'center',
+	    borderRadius: 10,
+	    marginRight:110,
 
-elevation: 4,
- },
+	 },
+
+	 leftElemShadow:{
+	shadowColor: "rgba(0, 0, 0, 0.3)",
+	shadowOffset: {
+		width: 0,
+		height: 15,
+	},
+	shadowOpacity: 0.23,
+	shadowRadius: 2.62,
+
+	elevation: 4,
+	 },
 
 
-  containerRight:{
-    flexDirection: 'column',
-    backgroundColor: '#50A2FF',
-    height: 278,
-    width: 195,
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    borderRadius: 10,
-    marginLeft:210,
-  },
+	  containerRight:{
+	    flexDirection: 'column',
+	    backgroundColor: '#50A2FF',
+	    height: 278,
+	    width: 195,
+	    justifyContent: 'space-around',
+	    alignItems: 'center',
+	    borderRadius: 10,
+	    marginLeft:210,
+	  },
 
-  rightElemShadow:{
-shadowColor: "rgba(106, 137, 253, 0.3)",
-shadowOffset: {
-	width: 0,
-	height: 15,
-},
-shadowOpacity: 0.23,
-shadowRadius: 2.62,
+	  rightElemShadow:{
+	shadowColor: "rgba(106, 137, 253, 0.3)",
+	shadowOffset: {
+		width: 0,
+		height: 15,
+	},
+	shadowOpacity: 0.23,
+	shadowRadius: 2.62,
 
-elevation: 4,
-  },
+	elevation: 4,
+	  },
 
   logoContainer: {
     flex: 1,
